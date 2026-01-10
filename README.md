@@ -4,7 +4,7 @@ VRChat / Unity向けツールを販売する「豆々庵」の公式解説・ポ
 商品の詳細な仕様や使い方、制作者の活動実績を掲載しています。
 
 ## 公開URL
-(ここにGitHub PagesのURLが入ります)
+(https://mametarogg.github.io/)
 
 ## サイト概要
 - **商品一覧**: BOOTHで販売中のツールを一覧表示
