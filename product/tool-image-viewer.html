@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer | 豆々庵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Notice the '../' to go up one level -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="../index.html" class="site-title">豆々庵</a>
+            <nav>
+                <ul>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../world.html">World</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 2rem;">
+        <!-- Breadcrumb (Optional) -->
+        <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+            <a href="../index.html">Home</a> &gt; <a href="../products.html">Products</a> &gt; <span>Image Viewer</span>
+        </div>
+
+        <article>
+            <div class="product-hero">
+                <div class="product-hero-info">
+                    <h1>Image Viewer</h1>
+                    <p>
+                        UnityのScene上に簡単に参考画像や動画を表示できるクリエイター向けツールです。<br>
+                        表情制作やポーズ資料の確認をスムーズにします。
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://mametarovv.booth.pm/items/7400733" target="_blank" class="btn"
+                            style="padding: 1rem 2rem; font-size: 1.1rem;">
+                            BOOTHで購入する
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-image">
+                    <img src="../assets/images/Image Viewer/Image Viewer.png" alt="Image Viewer"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+
+            <div class="content-grid" style="display: grid; gap: 4rem; grid-template-columns: 1fr;">
+
+                <!-- Main Description -->
+                <section>
+                    <h2>概要</h2>
+                    <p>
+                        「Image Viewer」は、創作活動中に必要な資料（画像や動画）をUnityのScene上に配置し、常に確認できるようにするツールです。<br>
+                        Free版では静止画の表示、DX-EDITIONでは動画再生やイメージシーケンス表示に対応しています。
+                    </p>
+                </section>
+
+                <!-- Features -->
+                <section>
+                    <h2>主な機能</h2>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                        <li><strong>静止画表示:</strong> PNG, JPGなどの主要な画像形式に対応。</li>
+                        <li><strong>動画・シーケンス再生 (DX版):</strong> 参考動画や連番画像を再生可能。</li>
+                        <li><strong>多様なフォーマットへの対応:</strong> ImageMagickやInkscape, FFmpegを導入することで、PDF, AI, SVG, WebP,
+                            GIFなどの表示も可能。</li>
+                        <li><strong>軽量動作:</strong> 作業の邪魔にならないシンプルなUI。</li>
+                    </ul>
+                </section>
+
+                <!-- Gallery -->
+                <section>
+                    <h2>ギャラリー</h2>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">
+                        <img src="../assets/images/Image Viewer/Image Viewer_1.png" alt="Screenshot 1"
+                            style="width: 100%; border-radius: 8px;">
+                        <img src="../assets/images/Image Viewer/Image Viewer_2.png" alt="Screenshot 2"
+                            style="width: 100%; border-radius: 8px;">
+                        <img src="../assets/images/Image Viewer/Image Viewer_3.png" alt="Screenshot 3"
+                            style="width: 100%; border-radius: 8px;">
+                    </div>
+                </section>
+
+                <!-- Requirements -->
+                <section
+                    style="background: var(--bg-color); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h2 style="font-size: 1.5rem;">導入に必要なもの / 動作環境</h2>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">✔ Unity 2022.3.22f1 (VRChat推奨バージョン)</li>
+                        <li style="margin-bottom: 0.5rem;">✔ 追加対応形式 (任意): ImageMagick, Inkscape, FFmpeg</li>
+                    </ul>
+                </section>
+
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 豆々庵</p>
+            <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="https://mametarovv.booth.pm/" target="_blank">BOOTH</a> |
+                <a href="https://x.com/mametaro_vv" target="_blank">X</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

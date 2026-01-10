@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆々庵 – VRChat / Unity向けツール解説サイト</title>
+    <meta name="description" content="VRChatやUnityでの制作を便利にする「豆々庵」の公式ツール解説・ポートフォリオサイトです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="index.html" class="site-title">豆々庵</a>
+            <nav>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="world.html">World</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="bg-geometric">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="container hero-content">
+                <h1>誰でも使えるツールで、快適に。</h1>
+                <p>VRChatやUnityでの創作活動をサポートする、実用的なツールを公開しています。</p>
+                <div style="margin-top: 2.5rem; position: relative; z-index: 2;">
+                    <a href="products.html" class="btn">商品一覧を見る</a>
+                    <a href="world.html" class="btn btn-outline" style="margin-left: 1rem;">ワールドを見る</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 4rem 2rem;">
+            <h2 class="section-title">豆々庵について</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+                「豆々庵（まめまめあん）」は、VRChatやUnityでの活動をより快適にするための便利なツール制作・販売を行っている個人ショップです。<br>
+                技術的な知識がなくても安心して使えるよう、「分かりやすさ」と「実運用での使いやすさ」を重視して開発しています。
+            </p>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="about.html" style="text-decoration: underline; font-weight: bold;">もっと詳しく →</a>
+            </div>
+        </section>
+
+        <!-- Pickup Section (Optional) -->
+        <section class="container" style="padding-bottom: 4rem;">
+            <h2 class="section-title">Pickup Items</h2>
+            <div id="pickup-container" class="grid">
+                <!-- JavaScript will populate this -->
+                <p class="text-center" style="grid-column: 1 / -1; color: var(--text-muted);">Loading items...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 豆々庵</p>
+            <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="https://mametarovv.booth.pm/" target="_blank">BOOTH</a> |
+                <a href="https://x.com/mametaro_vv" target="_blank">X</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

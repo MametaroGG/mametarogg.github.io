@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDF TextGen 3D | 豆々庵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="../index.html" class="site-title">豆々庵</a>
+            <nav>
+                <ul>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../world.html">World</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 2rem;">
+        <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+            <a href="../index.html">Home</a> &gt; <a href="../products.html">Products</a> &gt; <span>SDF TextGen
+                3D</span>
+        </div>
+
+        <article>
+            <div class="product-hero">
+                <div class="product-hero-info">
+                    <h1>SDF TextGen 3D</h1>
+                    <p>
+                        Unityだけで好きなフォントを3Dメッシュ化。<br>
+                        Blender不要で、厚みやスケール調整だけで簡単に3D文字を作成できるエディタ拡張ツールです。
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://mametarovv.booth.pm/items/7731565" target="_blank" class="btn"
+                            style="padding: 1rem 2rem; font-size: 1.1rem;">
+                            BOOTHで購入する
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-image">
+                    <img src="../assets/images/SDF TextGen３D/SDF TextGen３D.png" alt="SDF TextGen 3D Main">
+                </div>
+            </div>
+
+            <div class="content-grid" style="display: grid; gap: 4rem; grid-template-columns: 1fr;">
+
+                <section>
+                    <h2>概要</h2>
+                    <p>
+                        SDF TextGen 3Dは、Unityエディタ上で任意のTrueType/OpenTypeフォントから3Dモデル（メッシュ）を生成するツールです。<br>
+                        SDF（Signed Distance Field）技術を活用し、複雑な形状のフォントでも高品質なメッシュ生成が可能です。<br>
+                        外部のモデリングソフトを使わず、Unity完結でロゴや看板などの3D文字素材を作成できます。
+                    </p>
+                </section>
+
+                <section>
+                    <h2>主な機能</h2>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                        <li><strong>Unity完結:</strong> Blender等の外部ツール不要でフォントをメッシュ化。</li>
+                        <li><strong>簡単パラメータ:</strong> 基本的に「厚み」と「スケール」の調整だけで高品質な生成が可能。</li>
+                        <li><strong>三角ポリゴン生成:</strong> 生成されたメッシュは全て三角ポリゴンで構成され、VRChat等への持ち込みもスムーズ。</li>
+                        <li><strong>GPUアクセラレーション:</strong> グラフィックボードの性能を活用し、高速に生成（RTX4070superで50文字程度も可能）。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>ギャラリー</h2>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <img src="../assets/images/SDF TextGen３D/SDF TextGen３D_1.png" alt="Screenshot 1"
+                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <img src="../assets/images/SDF TextGen３D/SDF TextGen３D_2.png" alt="Screenshot 2"
+                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <img src="../assets/images/SDF TextGen３D/SDF TextGen３D_3.png" alt="Screenshot 3"
+                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <img src="../assets/images/SDF TextGen３D/SDF TextGen３D_4.png" alt="Screenshot 4"
+                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">
+                        複雑なフォントでも破綻しないメッシュが生成可能です。
+                    </p>
+                </section>
+
+                <section
+                    style="background: var(--bg-color); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h2 style="font-size: 1.5rem;">導入に必要なもの / 動作環境</h2>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">✔ Unity 2022.3.22f1 (VRChat推奨バージョン)</li>
+                        <li style="margin-bottom: 0.5rem;">✔ VRChat SDK 3.0 (導入済み環境で開発・動作確認済み)</li>
+                        <li style="margin-bottom: 0.5rem;">✔ FBX Exporter (Package Managerからインストールが必要)</li>
+                        <li>※ GPU性能に依存します。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Q&A / トラブルシューティング</h2>
+                    <dl style="line-height: 1.8;">
+                        <dt style="font-weight: bold; margin-top: 1rem;">Q. 生成した文字が潰れている</dt>
+                        <dd style="margin-left: 1rem; margin-bottom: 1rem;">A.
+                            「スキャン解像度」を上げると改善されます。ただし、上げすぎると曲面がガタつく場合があるため注意してください。「滑らかさ」でも改善する場合があります。</dd>
+
+                        <dt style="font-weight: bold; margin-top: 1rem;">Q. ポリゴン数が多すぎる</dt>
+                        <dd style="margin-left: 1rem; margin-bottom: 1rem;">A. 「簡略化の許容値」を上げるとポリゴン数を抑えられます。</dd>
+                    </dl>
+                </section>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 豆々庵</p>
+            <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="https://mametarovv.booth.pm/" target="_blank">BOOTH</a> |
+                <a href="https://x.com/mametaro_vv" target="_blank">X</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItemToggleBuilder | 豆々庵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="../index.html" class="site-title">豆々庵</a>
+            <nav>
+                <ul>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../world.html">World</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 2rem;">
+        <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+            <a href="../index.html">Home</a> &gt; <a href="../products.html">Products</a> &gt;
+            <span>ItemToggleBuilder</span>
+        </div>
+
+        <article>
+            <div class="product-hero">
+                <div class="product-hero-info">
+                    <h1>ItemToggleBuilder</h1>
+                    <p>
+                        アイテムON/OFFメニューを全自動生成。<br>
+                        メッシュを直接検出し、アバターの構造を壊さずに切り替えメニューを構築できる効率化ツールです。
+                    </p>
+                    <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://mametarovv.booth.pm/items/7349130" target="_blank" class="btn"
+                            style="padding: 1rem 2rem; font-size: 1.1rem;">
+                            BOOTHで購入する
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-image">
+                    <img src="../assets/images/ItemToggleBuilder/ItemToggleBuilder.png" alt="ItemToggleBuilder"
+                        style="width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+
+            <div class="content-grid" style="display: grid; gap: 4rem; grid-template-columns: 1fr;">
+
+                <section>
+                    <h2>概要</h2>
+                    <p>
+                        「ItemToggleBuilder」は、アバターの着せ替えや小物切り替えメニューの作成を自動化するUnityEditor拡張です。<br>
+                        アバタールートからメッシュを自動検出し、オン・オフしたいものを選ぶだけでExpression
+                        Menuを生成。オブジェクト単位ではなくメッシュ単位での制御により、バグの少ない安定した動作を実現します。
+                    </p>
+                </section>
+
+                <section>
+                    <h2>主な機能</h2>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                        <li><strong>全アバター対応:</strong> 特定のアバターに依存せず、あらゆるアバターで使用可能。</li>
+                        <li><strong>メッシュベース制御:</strong> 構造を崩しにくいメッシュ単位のON/OFF切り替え。</li>
+                        <li><strong>非破壊的な改変:</strong> Modular Avatarを利用し、アバター本体のデータを書き換えずにメニューを追加。</li>
+                        <li><strong>直感的な選択UI:</strong> リストからアイテムを選ぶだけの簡単操作。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>ギャラリー</h2>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">
+                        <img src="../assets/images/ItemToggleBuilder/ItemToggleBuilder_1.png" alt="Screenshot 1"
+                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                        <img src="../assets/images/ItemToggleBuilder/ItemToggleBuilder_2.png" alt="Screenshot 2"
+                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                    </div>
+                </section>
+
+                <section
+                    style="background: var(--bg-color); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h2 style="font-size: 1.5rem;">導入に必要なもの / 動作環境</h2>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">✔ Unity 2022.3.22f1 (VRChat推奨バージョン)</li>
+                        <li style="margin-bottom: 0.5rem;">✔ VRChat SDK 3.0 (導入済み環境で開発・動作確認済み)</li>
+                        <li style="margin-bottom: 0.5rem;">✔ Modular Avatar 1.13.4 以上</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>注意点</h2>
+                    <p style="color: var(--text-muted);">
+                        ※Modular AvatarのUI言語が日本語以外の場合、正常に機能しない可能性があります。<br>
+                        ※アイテム数に制限はありませんが、VRChatのパラメーター上限（256メモリ）を超えると動作しませんのでご注意ください。
+                    </p>
+                </section>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 豆々庵</p>
+            <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="https://mametarovv.booth.pm/" target="_blank">BOOTH</a> |
+                <a href="https://x.com/mametaro_vv" target="_blank">X</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
