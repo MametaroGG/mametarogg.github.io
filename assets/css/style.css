@@ -94,6 +94,29 @@ header {
     width: 28px;
     height: 28px;
     color: var(--primary-color);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.site-title:hover .site-logo {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.site-title:hover .site-logo path:nth-child(1),
+.site-title:hover .site-logo path:nth-child(2) {
+    animation: logo-sway 1.2s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+
+@keyframes logo-sway {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
 }
 
 nav ul {
