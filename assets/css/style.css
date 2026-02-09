@@ -85,6 +85,15 @@ header {
     font-size: 1.25rem;
     font-weight: bold;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.site-logo {
+    width: 28px;
+    height: 28px;
+    color: var(--primary-color);
 }
 
 nav ul {
@@ -136,6 +145,42 @@ footer a {
 .btn-outline:hover {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+/* Icon Links */
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.icon-link svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-icons a {
+    color: #ddd;
+    opacity: 0.8;
+}
+
+.footer-icons a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.footer-icons svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* Hero Section */
