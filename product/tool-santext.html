@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-79JWHBC961"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-79JWHBC961');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全自動アバター改変ツール「SanText」 | 豆々庵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/images/icons/site-logo.png">
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="全自動アバター改変ツール「SanText」 | 豆々庵">
+    <meta property="og:description" content="VRChatやUnityでの制作を便利にする「豆々庵」の公式ツール解説・ポートフォリオサイトです。">
+    <meta property="og:image" content="https://mametarogg.github.io/assets/images/豆々庵/SNS埋め込み画像.png">
+    <meta property="og:url" content="https://mametarogg.github.io/product/tool-santext.html">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="../index.html" class="site-title"><svg class="site-logo" viewBox="0 0 1024 1024" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M512 384C512 384 450 128 320 64C320 64 384 128 384 256C384 384 512 384 512 384Z"
+                        fill="#8cba9c" />
+                    <path d="M512 384C512 384 574 128 704 64C704 64 640 128 640 256C640 384 512 384 512 384Z"
+                        fill="#4a7459" />
+                    <path
+                        d="M896 640C896 820 724 960 512 960C300 960 128 820 128 640C128 460 300 320 512 320C724 320 896 460 896 640Z"
+                        fill="#2c4a36" />
+                    <path
+                        d="M512 448C448 448 384 480 384 544C384 608 448 640 512 640C576 640 640 608 640 544C640 480 576 448 512 448Z"
+                        stroke="white" stroke-width="32" stroke-linecap="round" />
+                </svg>豆々庵</a>
+            <nav>
+                <ul>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../world.html">World</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 4rem 2rem;">
+        <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted);">
+            <a href="../index.html">Home</a> &gt; <a href="../products.html">Products</a> &gt; <span>SanText</span>
+        </div>
+
+        <article>
+            <div class="product-hero">
+                <div class="product-hero-info">
+                    <h1>SanText</h1>
+                    <p>
+                        「アバター改変を記録して、いつでも再生」<br>
+                        アバターをいじった手順を自動でメモ。ワンクリックで再生・巻き戻しができる、改変作業を圧倒的に楽にするUnity拡張です。
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://mametarovv.booth.pm/items/8480596" target="_blank" class="btn"
+                            style="padding: 1rem 2rem; font-size: 1.1rem;">
+                            BOOTHで購入する
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-image">
+                    <img src="../assets/images/SanText/SanText.webp" alt="SanText Main Image"
+                        style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
+                </div>
+            </div>
+
+            <div class="content-grid" style="display: grid; gap: 4rem; grid-template-columns: 1fr;">
+
+                <section>
+                    <h2>概要</h2>
+                    <p>
+                        SanTextは、Unityエディタ上で行ったアバター改変のプロセスを自動で「記録」し、後から「再生」や「巻き戻し」を行えるツールです。<br>
+                        「手順を忘れてしまった」「特定の変更だけ元に戻したい」「同じ設定を別のアバターにも適用したい」といったアバター改変の様々な課題を解決します。
+                        無駄に詳細なバックアップとしても機能し、試行錯誤を強力に支援します。
+                    </p>
+                </section>
+
+                <section>
+                    <h2>主な機能</h2>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                        <li><strong>自動で記録:</strong> 記録開始ボタンを押していつも通り作業するだけで、各種プロパティ、マテリアル、コンポーネントの追加/削除、Transformなどを操作の流れに沿って自動で記録します。</li>
+                        <li><strong>順再生（もう一度）:</strong> 記録した手順を同じアバター、あるいは別のアバターにワンクリックで再適用。改変レシピの使い回しに最適です。</li>
+                        <li><strong>巻き戻し（やり直し）:</strong> 気になる手順や特定の変更だけを選んでピンポイントで元に戻せます。「この一部の設定だけやっぱり無しで」が簡単に実現します。</li>
+                        <li><strong>レシピの共有・配布:</strong> 記録データは軽量なJSONファイルで保存。別PCや別のプロジェクトに持っていってもGUIDやパスから自動的に参照を再解決します。</li>
+                        <li><strong>タイムラプス機能:</strong> 記録した改変手順をタイムラプスとして撮影・動画作成が可能です（※前提アセットとしてGestureManagerが必要です）。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>対応ツール</h2>
+                    <p style="margin-bottom: 1rem;">主要なアバター改変ツールの操作も、ツール名・項目名付きの分かりやすい手順として自動認識し記録します。</p>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8;">
+                        <li><strong>VRChat SDK (Avatar Dynamics):</strong> PhysBone, Constraints, Avatar Descriptor (LipSync, Viseme), Head Chop 等</li>
+                        <li><strong>lilToon:</strong> マテリアル設定、グラデーション、シェーダー設定、Lite/Multi変換 等</li>
+                        <li><strong>Modular Avatar:</strong> Object Toggle, Shape Changer, Material Setter, Parameters, Menu Item, Merge Armature 等</li>
+                        <li><strong>Avatar Optimizer (AAO):</strong> Merge PhysBone, Merge Skinned Mesh, Freeze/Remove Mesh BlendShape 等</li>
+                        <li><strong>Avatar Compressor:</strong> LAC Texture Compressor</li>
+                        <li><strong>その他汎用操作:</strong> GameObjectの追加/削除/移動、コンポーネント追加/削除、マテリアル割り当て、リスト要素増減 等</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>使い方</h2>
+                    <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                        <div>
+                            <span style="display: inline-block; width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; text-align: center; line-height: 40px; margin-bottom: 1.5rem; font-weight: bold; font-size: 1.2rem;">1</span>
+                            <p style="line-height: 1.6;">「Tools > Mame2an > SanText」からウィンドウを開きます。</p>
+                        </div>
+                        <div>
+                            <span style="display: inline-block; width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; text-align: center; line-height: 40px; margin-bottom: 1.5rem; font-weight: bold; font-size: 1.2rem;">2</span>
+                            <p style="line-height: 1.6;">「記録開始」を押し、いつも通りアバターを改変したら「記録停止」を押します。</p>
+                        </div>
+                        <div>
+                            <span style="display: inline-block; width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; text-align: center; line-height: 40px; margin-bottom: 1.5rem; font-weight: bold; font-size: 1.2rem;">3</span>
+                            <p style="line-height: 1.6;">一覧から記録を開いて、順再生や巻き戻しを行って改変を適用します。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section style="background: var(--bg-color); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h2 style="font-size: 1.5rem;">動作環境</h2>
+                    <ul style="list-style: none; padding: 0; line-height: 2; font-size: 1rem;">
+                        <li>✔ Unity 2022.3 系（VRChat SDK3 / Avatars 環境推奨）</li>
+                        <li>✔ VRChat SDK - Avatars 3.10.3 以上推奨</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>注意事項</h2>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8;">
+                        <li>本ツールはエディタ拡張です。アバターやアセットそのものは含まれません。</li>
+                        <li>改変内容によっては、再生・巻き戻しに対応しない特殊な操作があります（テクスチャの焼き込み等）。</li>
+                        <li>別アバターへの再生は、アバターの構造差により結果が異なる場合があります。</li>
+                    </ul>
+                </section>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 豆々庵 All Rights Reserved.</p>
+            <div class="footer-icons" style="margin-top: 1rem;">
+                <a href="https://mametarovv.booth.pm/" target="_blank" class="icon-link" title="BOOTH">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 812C0 929.084 94.9156 1024 212 1024H812C929.084 1024 1024 929.084 1024 812V212C1024 94.9156 929.084 0 812 0H212C94.9156 0 0 94.9156 0 212V812Z" fill="#FC4D50"/><path fill-rule="evenodd" clip-rule="evenodd" d="M773.828 438.341V389.068L650.744 192H608.227L541.093 353.238L475.077 214.446L438.138 214.382L326.272 478.653V227.833H250.172V250.007H192V327.26H250.172V550.306C250.172 570.098 266.227 586.141 286.004 586.141H324.033V832L401.683 831.946C401.683 831.946 401.695 720.762 401.695 720.644C401.695 658.964 455.026 608.963 520.963 608.563C521.198 608.563 521.445 608.535 521.707 608.535H521.744H521.786H521.875C629.722 608.612 717.139 690.28 717.139 790.983V832H773.828V611.427H832V489.487L773.828 438.341Z" fill="white"/></svg>
+                </a>
+                <a href="https://x.com/mametaro_vv" target="_blank" class="icon-link" title="X (Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
