@@ -13,7 +13,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VRC YouFix | 豆々庵</title>
+    <title>動画のURLを再生できるように変換するツール「VRC YouFix」【ニコニコ動画対応】 | 豆々庵</title>
+    <meta name="description" content="YouTubeやニコニコ動画のURLをVRChatで再生可能な形式に変換する無料ツール「VRC YouFix」。高画質を選べる「ローカル配信」とアプリ不要の「直リンク」モードに対応。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -21,8 +22,8 @@
     <link rel="icon" href="../assets/images/icons/site-logo.png">
     <!-- OGP -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="VRC YouFix | 豆々庵">
-    <meta property="og:description" content="VRChatやUnityでの制作を便利にする「豆々庵」の公式ツール解説・ポートフォリオサイトです。">
+    <meta property="og:title" content="動画のURLを再生できるように変換するツール「VRC YouFix」【ニコニコ動画対応】 | 豆々庵">
+    <meta property="og:description" content="YouTubeやニコニコ動画のURLをVRChatで再生可能な形式に変換する無料ツール「VRC YouFix」。高画質を選べる「ローカル配信」とアプリ不要の「直リンク」モードに対応。">
     <meta property="og:image" content="https://mametarogg.github.io/assets/images/豆々庵/SNS埋め込み画像.png">
     <meta property="og:url" content="https://mametarogg.github.io/product/tool-vrc-youfix.html">
     <meta name="twitter:card" content="summary_large_image">
@@ -50,13 +51,17 @@
         <article>
             <div class="product-hero">
                 <div class="product-hero-info">
+                    <div style="display: inline-block; background: var(--primary-color); color: #fff; padding: 0.2rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 0.8rem;">無料配布中 / FREE</div>
                     <h1>VRC YouFix</h1>
+                    <p style="font-size: 1.1rem; font-weight: bold; color: var(--primary-color); margin-bottom: 0.8rem;">
+                        動画のURLを再生できるように変換するツール【ニコニコ動画対応】
+                    </p>
                     <p>
-                        動画のURLをVRChat等で再生可能な形式に変換。<br>
-                        自身のDropboxを経由することで、ニコニコ動画などの動画配信サイトも安全に視聴可能にする変換ツールです。
+                        YouTubeやニコニコ動画のURLを、VRChat内の動画プレイヤーでスムーズに再生できる形式へ変換するツールです。<br>
+                        画質を選べる「ローカル配信」と、視聴者側のアプリ導入が不要な「直リンク」の2つの出力モードを搭載。どなたでも完全無料でご利用いただけます。
                     </p>
                     <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="https://mametarovv.booth.pm/items/7340045" target="_blank" class="btn" style="padding: 1rem 2rem; font-size: 1.1rem; ">BOOTHで購入する</a>
+                        <a href="https://mametarovv.booth.pm/items/7340045" target="_blank" class="btn" style="padding: 1rem 2rem; font-size: 1.1rem; ">BOOTHでダウンロード（無料）</a>
                     </div>
                 </div>
                 <div class="product-hero-image">
@@ -70,18 +75,68 @@
                 <section>
                     <h2>概要</h2>
                     <p>
-                        「VRC YouFix」は、動画配信サイトのURLを、VRChat内のビデオプレイヤー等で再生可能な直リンクへ変換するデスクトップアプリです。<br>
-                        従来の変換ツールとは異なり、動画を一度自身のDropboxに一時保存してから再生する仕組みを採用しているため、再生が不安定なサイトや、ニコニコ動画などの特定のサイトにも幅広く対応しています。
+                        「VRC YouFix」は、動画配信サイトのURLをVRChat等のワールド内で再生可能な形式へ変換するデスクトップツールです。<br>
+                        本アプリでは、動画そのものを作者側のサーバーへ送信したり、作者が内容を取得したりすることは一切ありません。安全かつクリーンに動作します。
                     </p>
+                    <div style="margin-top: 1rem; padding: 1rem 1.5rem; background: var(--bg-color); border-left: 4px solid var(--primary-color); border-radius: 4px;">
+                        <strong>【v1.4.0以降の変更について】</strong><br>
+                        従来のDropboxへのアップロード方式（第三者への共有リスク排除および私的利用の範囲への適正化のため）を廃止し、新たに「ローカル配信」および「直リンク」の安全な2方式へ完全移行いたしました。
+                    </div>
                 </section>
 
                 <section>
-                    <h2>主な機能</h2>
+                    <h2>動作のしくみ（選べる2つの出力モード）</h2>
+                    <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 1.5rem;">
+                        <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; background: var(--card-bg);">
+                            <h3 style="font-size: 1.2rem; color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                                ① ローカル配信モード
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                                <strong>特徴:</strong> 画質を選んで高画質で楽しみたい方向け（視聴者側にも本アプリが必要）
+                            </p>
+                            <ol style="padding-left: 1.2rem; line-height: 1.8; font-size: 0.95rem;">
+                                <li><strong>動画の取得:</strong> yt-dlp により映像トラック（H.264）と音声トラック（AAC）のURLを取得。</li>
+                                <li><strong>結合:</strong> ffmpeg により2つを1本にまとめます。再エンコードなしのコンテナ詰め替えのため、画質・音質は劣化しません。</li>
+                                <li><strong>配信・再生:</strong> あなたのPC内（127.0.0.1）にのみ待ち受けるローカルサーバーからVRChatへ配信。データはPC外に出ず、一時ファイルも再生後やアプリ終了時に自動削除されます。</li>
+                            </ol>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.8rem;">
+                                ※プレイヤー「VizVid」を使うと自動で同期してくれるため相性抜群です。
+                            </p>
+                        </div>
+
+                        <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; background: var(--card-bg);">
+                            <h3 style="font-size: 1.2rem; color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; margin-bottom: 1rem;">
+                                ② 直リンクモード
+                            </h3>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1rem;">
+                                <strong>特徴:</strong> 視聴者側にアプリ不要で手軽に共有可能（画質360p固定）
+                            </p>
+                            <ol style="padding-left: 1.2rem; line-height: 1.8; font-size: 0.95rem;">
+                                <li><strong>URLの取得:</strong> yt-dlp により映像と音声が1本にまとまった配信URL（H.264＋AAC／360p）を取得。</li>
+                                <li><strong>確認:</strong> 実際に取得可能か検証した上で表示。再生できないURLは渡しません。</li>
+                                <li><strong>配信・再生:</strong> VRChatが配信元サーバーへ直接接続して再生。動画データはお使いのPCを経由・複製せず、URLには数時間の有効期限があります。</li>
+                            </ol>
+                            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.8rem;">
+                                ※音質はローカル配信と同じ（AAC 約128kbps）です。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>ニコニコ動画対応について</h2>
                     <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
-                        <li><strong>多様なサイトに対応:</strong> YouTube, Twitch, ニコニコ動画, Xなどの動画URLを変換可能。</li>
-                        <li><strong>Dropbox連携:</strong> 動画を自身のDropboxへダウンロードし、直リンクを自動生成。</li>
-                        <li><strong>簡単操作:</strong> URLを入力して変換するだけで、再生用リンクを生成。コピーボタンやショートカットで手軽に取得。</li>
-                        <li><strong>上書き機能:</strong> ストレージを圧迫しないよう、変換ごとに前回のファイルを自動で上書き。</li>
+                        <li><strong>「ローカル配信」モード</strong>にてニコニコ動画の再生に対応しています（最高画質720p）。</li>
+                        <li>会員限定・年齢制限・地域制限がある動画は変換できません。</li>
+                        <li>コメントの表示機能はありません。</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>ソフトの使い方 & 必須ソフトについて</h2>
+                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                        <li><strong>使い方:</strong> ダウンロードした <code>VRCYouFix_x.x.x_Setup.exe</code> を開き、PCにインストールしてご利用ください。</li>
+                        <li><strong>必須ソフト「ffmpeg」:</strong> ソフト導入時に自動インストールされるようになりました！別途手動でインストールする必要はありません。</li>
                     </ul>
                 </section>
 
@@ -98,20 +153,43 @@
 
                 <section
                     style="background: var(--bg-color); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-                    <h2 style="font-size: 1.5rem;">導入に必要なもの / 動作環境</h2>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.5rem;">✔ Windows OS</li>
-                        <li style="margin-bottom: 0.5rem;">✔ Dropboxアカウント（無料枠で利用可能）</li>
-                        <li style="margin-bottom: 0.5rem;">✔ FFmpeg （ニコニコ動画の再生に必須）</li>
+                    <h2 style="font-size: 1.5rem;">動作環境</h2>
+                    <ul style="list-style: none; padding: 0; line-height: 2; font-size: 1rem;">
+                        <li>✔ <strong>OS:</strong> Windows 11 Pro / Home（Windows 10 / 11）</li>
+                        <li>✔ <strong>プロバイダー:</strong> UCOM(ARTERIA)等</li>
+                        <li>✔ <strong>VRChat設定:</strong> 「Allow Untrusted URLs（信頼されていないURLを許可）」がONであること</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>注意点</h2>
-                    <p style="color: var(--text-muted);">
-                        ※Dropboxの無料枠（2GB）を超えるサイズの動画を変換する場合、有料プランが必要になります。<br>
-                        ※ニコニコ動画の視聴には対応していますが、コメント表示機能はありません。
-                    </p>
+                    <h2>利用規約（Terms of Use）</h2>
+                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; line-height: 1.8;">
+                        <h3 style="font-size: 1.1rem; margin-top: 0;">■ 禁止事項（Prohibited）</h3>
+                        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                            <li><strong>再配布・転売の禁止:</strong> 本ソフトを第三者に対して再配布・販売・譲渡・貸与することはできません（友人への共有、無料配布、BOOTH等での再販売など）。</li>
+                            <li><strong>自作発言の禁止:</strong> 本ソフトを自分自身が製作したかのように偽る行為を禁止します。</li>
+                            <li>悪意ある使用・迷惑行為を禁止します。</li>
+                        </ul>
+                        <h3 style="font-size: 1.1rem;">■ 免責事項（Disclaimer）</h3>
+                        <ul style="list-style: disc; padding-left: 1.5rem;">
+                            <li>本ソフトの使用・利用により生じたいかなる損害・トラブル・不利益に対しても、製作者は一切の責任を負いません。</li>
+                            <li>本ソフトは現状有姿で提供されており、動作保証やサポート等は行っておりません。</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>更新履歴</h2>
+                    <ul style="list-style: none; padding: 0; line-height: 1.8; font-size: 0.95rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/08/30 Ver.1.4.3:</strong> 「ローカル配信」モードでニコニコ動画に対応（最高画質は 720p）</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/08/29 Ver.1.4.2:</strong> 直リンク生成モードを追加（最高画質 360p / 最高音質 129kbps）</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/08/28 Ver.1.4.1:</strong> オートダビングに対応している動画が変換できない問題を修正</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/08/28 Ver.1.4.0:</strong> Dropboxへのアップロード機能を廃止</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/08/27 Ver.1.3.0:</strong> Dropboxを使用しないローカル配信モードを導入（ffmpegでマージしたものを配信）</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/01/25 Ver.1.1.1:</strong> YouTube取得時の音声フォーマットをVRChat互換のAACに変更</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2026/01/18 Ver.1.1.0:</strong> ffmpeg自動インストール・更新対応、yt-dlp自動更新対応、動画詳細ビジュアル表示</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2025/09/23 Ver.1.0.1:</strong> 初版リリース</li>
+                    </ul>
                 </section>
 
             </div>
