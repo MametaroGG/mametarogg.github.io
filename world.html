@@ -11,9 +11,13 @@
 
       gtag('config', 'G-79JWHBC961');
     </script>
+
     <meta charset="UTF-8">
+    <script src="assets/js/main.js"></script>
+    <meta name="color-scheme" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World | 豆々庵</title>
+    <meta name="description" content="NPC․ASMRなど、まめたろーが制作したVRChatワールドの一覧。">
+    <title>VRChatワールド | まめたろー・豆々庵</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -21,187 +25,92 @@
     <link rel="icon" href="assets/images/icons/site-logo.png">
     <!-- OGP -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="World | 豆々庵">
-    <meta property="og:description" content="VRChatやUnityでの制作を便利にする「豆々庵」の公式ツール解説・ポートフォリオサイトです。">
+    <meta property="og:title" content="VRChatワールド | まめたろー・豆々庵">
+    <meta property="og:description" content="NPC․ASMRなど、まめたろーが制作したVRChatワールドの一覧。">
     <meta property="og:image" content="https://mametarogg.github.io/assets/images/豆々庵/SNS埋め込み画像.png">
     <meta property="og:url" content="https://mametarogg.github.io/world.html">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
-    <header>
-        <div class="container header-inner">
-            <a href="index.html" class="site-title"><svg class="site-logo" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M512 384C512 384 450 128 320 64C320 64 384 128 384 256C384 384 512 384 512 384Z" fill="#8cba9c"/><path d="M512 384C512 384 574 128 704 64C704 64 640 128 640 256C640 384 512 384 512 384Z" fill="#4a7459"/><path d="M896 640C896 820 724 960 512 960C300 960 128 820 128 640C128 460 300 320 512 320C724 320 896 460 896 640Z" fill="#2c4a36"/><path d="M512 448C448 448 384 480 384 544C384 608 448 640 512 640C576 640 640 608 640 544C640 480 576 448 512 448Z" stroke="white" stroke-width="32" stroke-linecap="round"/></svg>豆々庵</a>
-            <nav>
-                <ul>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="world.html" class="active" style="color:var(--text-color); font-weight:bold;">World</a>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="scene-worlds">
+    <a class="skip-link" href="#main-content">本文へスキップ</a><header><div class="container header-inner"><a href="index.html" class="site-title"><img class="site-logo" src="assets/images/icons/site-logo.svg" alt="" width="30" height="30">まめたろー<span class="brand-note">/ 豆々庵</span></a><nav aria-label="メインナビゲーション"><ul><li><a href="products.html">Tools</a></li><li><a href="world.html" aria-current="page">Worlds</a></li><li><a href="about.html">About</a></li><li><a class="nav-shop" href="https://mametarovv.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH（新しいタブで開く）" title="BOOTH"><img src="assets/images/icons/logo_icon.svg" width="22" height="22" alt=""></a></li></ul></nav><button class="theme-toggle" type="button" aria-label="ダークモード" aria-pressed="false" title="ダークモードに切り替え" hidden><svg class="theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20.8 13.2A9 9 0 0 1 10.8 3.2a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div></header>
 
-    <main class="container" style="padding: 4rem 2rem;">
-        <h1 class="section-title">World</h1>
-        <p class="text-center" style="margin-bottom: 3rem; color: var(--text-muted);">
-            これまでに制作したワールドたちです。
-        </p>
-
-        <!-- World Items -->
-        <div style="display: grid; gap: 4rem;">
-
-            <!-- ポケモンもどき当てたら即終了！ -->
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                <div
-                    style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
-                    <img src="assets/images/ポケモンもどき当てたら即終了！/ポケモンもどき当てたら即終了.webp"
-                        alt="ポケモンもどき当てたら即終了！" style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2>ポケモンもどき当てたら即終了！</h2>
-                    <p style="color: var(--primary-color); font-weight: bold; margin-bottom: 0.5rem;">VRChat World /
-                        Udon</p>
-                    <p>
-                        シルエットを見て、本物のポケモンか「ポケモンもどき」かを見分け、全問正解を目指すゲームです！<br>
-                        1問でも間違えると即ゲームオーバー。RTA機能も実装したので、世界ランキング上位を目指して挑戦してみてね！
-                    </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://vrchat.com/home/launch?worldId=wrld_d9dd3315-6aaf-47cc-a95f-878615cf01e1"
-                            target="_blank" class="btn">
-                            VRChatで開く
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr style="border: 0; border-top: 1px solid var(--border-color);">
-
-            <!-- NPC․ASMR-w- -->
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                <div
-                    style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #eee;">
-                    <img src="assets/images/NPC.ASMR-w-/NPCASMR-w-.webp"
-                        alt="NPC․ASMR-w-" style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2>NPC․ASMR-w-</h2>
-                    <p style="color: var(--primary-color); font-weight: bold; margin-bottom: 0.5rem;">VRChat World /
-                        Udon</p>
-                    <p>
-                        人気ワールド［NPC․ASMR］のアバター特盛版です。<br>
-                        テクスチャを極限まで圧縮しているため、ディテールは本家［NPC․ASMR］より控えめです。毎日ASMRを聴きまくる時間がなかなか取れないので、プレイリストは不定期更新となります。
-                    </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://vrchat.com/home/launch?worldId=wrld_c8071a93-dd2a-4061-96dd-2eb415d692fe"
-                            target="_blank" class="btn">
-                            VRChatで開く
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr style="border: 0; border-top: 1px solid var(--border-color);">
-
-            <!-- NPC․Sleep ｜ Sio ver․ -->
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                <div
-                    style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #eee;">
-                    <img src="assets/images/NPC․Sleep ｜ Sio ver․/NPC․Sleep ｜ Sio ver․ Preview.webp"
-                        alt="NPC․Sleep ｜ Sio ver․" style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2>NPC․Sleep ｜ Sio ver․</h2>
-                    <p style="color: var(--primary-color); font-weight: bold; margin-bottom: 0.5rem;">VRChat World /
-                        Udon</p>
-                    <p>
-                        静かな夜、しおちゃん（NPC）があなたの眠りを優しくサポート。<br>
-                        ビデオプレイヤーで任意に再生できるリアルな寝息や環境音、そして添い寝体験。VRChatでの快適な睡眠を追求した、癒しの睡眠特化型ワールドです。
-                    </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://vrchat.com/home/launch?worldId=wrld_33059352-cd1d-4a91-8769-633024084c69"
-                            target="_blank" class="btn">
-                            VRChatで開く
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr style="border: 0; border-top: 1px solid var(--border-color);">
-
-            <!-- NPC․ASMR -->
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                <div
-                    style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #eee;">
-                    <img src="assets/images/NPC․ASMR/NPC․ASMR Preview.webp" alt="NPC․ASMR"
-                        style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2>NPC․ASMR</h2>
-                    <p style="color: var(--primary-color); font-weight: bold; margin-bottom: 0.5rem;">VRChat World /
-                        Udon</p>
-                    <p>
-                        VRChatの美少女アバターたちに耳かきをしてもらえる極上のリラクゼーション体験。<br>
-                        ASMRに特化した精密な音響設計と、没入感を極限まで高めるUdonギミックを搭載した特化型ワールドです。
-                    </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://vrchat.com/home/launch?worldId=wrld_48061838-9120-4c65-9535-74872cdfbf1a"
-                            target="_blank" class="btn">
-                            VRChatで開く
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <hr style="border: 0; border-top: 1px solid var(--border-color);">
-
-            <!-- Akyo娘プリティーダービー -->
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-                <div
-                    style="flex: 1; min-width: 300px; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #eee;">
-                    <img src="assets/images/Akyo娘プリティーダービー/Akyo娘プリティーダービー⁄Akyomusume Pretty Derby Preview.webp"
-                        alt="Akyo娘プリティーダービー" style="width: 100%; height: auto; object-fit: cover;">
-                </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h2>Akyo娘プリティーダービー</h2>
-                    <p style="color: var(--primary-color); font-weight: bold; margin-bottom: 0.5rem;">VRChat World /
-                        Udon</p>
-                    <p>
-                        Akyoたちが駆け抜ける、熱きレースの舞台。<br>
-                        Udonによる独自のゲームロジックを搭載し、多人数でのリアルタイムな競争体験を実現したVRChat向けワールドです。
-                    </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://vrchat.com/home/launch?worldId=wrld_304a19b0-2853-43c6-a64d-e80590952c1e"
-                            target="_blank" class="btn">
-                            VRChatで開く
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+    <main id="main-content" class="container catalogue page worlds-catalogue">
+        <div class="page-heading">
+            <p class="eyebrow">WORLDS</p>
+            <h1>ワールド</h1>
+            <p>VRChatで公開しているゲームやASMRのワールドです。</p>
         </div>
 
+        <div class="grid">
+                <article class="card">
+                    <a class="card-link" href="https://vrchat.com/home/launch?worldId=wrld_d9dd3315-6aaf-47cc-a95f-878615cf01e1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-img">
+                            <img width="2400" height="1800" src="assets/images/ポケモンもどき当てたら即終了！/ポケモンもどき当てたら即終了.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">VRChat · Udon</small>
+                            <h2 class="card-title">ポケモンもどき当てたら即終了！ <span aria-hidden="true">↗</span></h2>
+                            <p class="card-text">ポケモンと「ポケモンもどき」をシルエットで見分ける、一問のミスで終了するRTA・ランキング対応ゲームです。</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a class="card-link" href="https://vrchat.com/home/launch?worldId=wrld_c8071a93-dd2a-4061-96dd-2eb415d692fe" target="_blank" rel="noopener noreferrer">
+                        <div class="card-img">
+                            <img width="2400" height="1800" src="assets/images/NPC.ASMR-w-/NPCASMR-w-.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">VRChat · Udon</small>
+                            <h2 class="card-title">NPC․ASMR-w- <span aria-hidden="true">↗</span></h2>
+                            <p class="card-text">NPC․ASMRのアバター数を増やし、テクスチャを圧縮した派生ワールドです。</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a class="card-link" href="https://vrchat.com/home/launch?worldId=wrld_33059352-cd1d-4a91-8769-633024084c69" target="_blank" rel="noopener noreferrer">
+                        <div class="card-img">
+                            <img width="1764" height="1323" src="assets/images/NPC․Sleep ｜ Sio ver․/NPC․Sleep ｜ Sio ver․ Preview.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">VRChat · Udon</small>
+                            <h2 class="card-title">NPC․Sleep ｜ Sio ver․ <span aria-hidden="true">↗</span></h2>
+                            <p class="card-text">しおちゃんのNPCと、寝息や環境音を再生するビデオプレイヤーを備えた睡眠向けワールドです。</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a class="card-link" href="https://vrchat.com/home/launch?worldId=wrld_48061838-9120-4c65-9535-74872cdfbf1a" target="_blank" rel="noopener noreferrer">
+                        <div class="card-img">
+                            <img width="800" height="600" src="assets/images/NPC․ASMR/NPC․ASMR Preview.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">VRChat · Udon</small>
+                            <h2 class="card-title">NPC․ASMR <span aria-hidden="true">↗</span></h2>
+                            <p class="card-text">アバターによる耳かきと、ASMR向けの音響・Udonギミックを備えたワールドです。</p>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a class="card-link" href="https://vrchat.com/home/launch?worldId=wrld_304a19b0-2853-43c6-a64d-e80590952c1e" target="_blank" rel="noopener noreferrer">
+                        <div class="card-img">
+                            <img width="800" height="600" src="assets/images/Akyo娘プリティーダービー/Akyo娘プリティーダービー⁄Akyomusume Pretty Derby Preview.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">VRChat · Udon</small>
+                            <h2 class="card-title">Akyo娘プリティーダービー <span aria-hidden="true">↗</span></h2>
+                            <p class="card-text">Akyoたちが走るレースを、複数人でリアルタイムに楽しむゲームワールドです。</p>
+                        </div>
+                    </a>
+                </article>
+        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 豆々庵 All Rights Reserved.</p>
-            <div class="footer-icons">
-                <a href="https://mametarovv.booth.pm/" target="_blank" class="icon-link" title="BOOTH">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 812C0 929.084 94.9156 1024 212 1024H812C929.084 1024 1024 929.084 1024 812V212C1024 94.9156 929.084 0 812 0H212C94.9156 0 0 94.9156 0 212V812Z" fill="#FC4D50"/><path fill-rule="evenodd" clip-rule="evenodd" d="M773.828 438.341V389.068L650.744 192H608.227L541.093 353.238L475.077 214.446L438.138 214.382L326.272 478.653V227.833H250.172V250.007H192V327.26H250.172V550.306C250.172 570.098 266.227 586.141 286.004 586.141H324.033V832L401.683 831.946C401.683 831.946 401.695 720.762 401.695 720.644C401.695 658.964 455.026 608.963 520.963 608.563C521.198 608.563 521.445 608.535 521.707 608.535H521.744H521.786H521.875C629.722 608.612 717.139 690.28 717.139 790.983V832H773.828V611.427H832V489.487L773.828 438.341Z" fill="white"/></svg>
-                </a>
-                <a href="https://x.com/mametaro_vv" target="_blank" class="icon-link" title="X (Twitter)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
+    <footer><div class="container footer-inner"><p class="footer-brand">まめたろー / 豆々庵<small>© 2026 Mametaro All Rights Reserved.</small></p><div class="footer-links"><a href="https://x.com/mametaro_vv" target="_blank" rel="noopener noreferrer" aria-label="X（新しいタブで開く）" title="X"><svg width="21" height="21" fill="currentColor" aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a><a href="https://github.com/MametaroGG" target="_blank" rel="noopener noreferrer" aria-label="GitHub（新しいタブで開く）" title="GitHub"><svg width="21" height="21" fill="currentColor" aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://mametarovv.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH（新しいタブで開く）" title="BOOTH"><img src="assets/images/icons/logo_icon.svg" width="22" height="22" alt=""></a></div></div></footer>
 </body>
 
 </html>

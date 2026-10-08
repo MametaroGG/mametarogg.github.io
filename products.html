@@ -11,9 +11,13 @@
 
       gtag('config', 'G-79JWHBC961');
     </script>
+
     <meta charset="UTF-8">
+    <script src="assets/js/main.js"></script>
+    <meta name="color-scheme" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品一覧 | 豆々庵</title>
+    <meta name="description" content="Windowsソフト、Unityツール、Chrome拡張など、まめたろーが公開しているツールの一覧。各ツールの詳細と使い方を紹介しています。">
+    <title>ツール一覧 | まめたろー・豆々庵</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -21,521 +25,360 @@
     <link rel="icon" href="assets/images/icons/site-logo.png">
     <!-- OGP -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="商品一覧 | 豆々庵">
-    <meta property="og:description" content="VRChatやUnityでの制作を便利にする「豆々庵」の公式ツール解説・ポートフォリオサイトです。">
+    <meta property="og:title" content="ツール一覧 | まめたろー・豆々庵">
+    <meta property="og:description" content="Windowsソフト、Unityツール、Chrome拡張など、まめたろーが公開しているツールの一覧。各ツールの詳細と使い方を紹介しています。">
     <meta property="og:image" content="https://mametarogg.github.io/assets/images/豆々庵/SNS埋め込み画像.png">
     <meta property="og:url" content="https://mametarogg.github.io/products.html">
     <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
-    <header>
-        <div class="container header-inner">
-            <a href="index.html" class="site-title"><svg class="site-logo" viewBox="0 0 1024 1024" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M512 384C512 384 450 128 320 64C320 64 384 128 384 256C384 384 512 384 512 384Z"
-                        fill="#8cba9c" />
-                    <path d="M512 384C512 384 574 128 704 64C704 64 640 128 640 256C640 384 512 384 512 384Z"
-                        fill="#4a7459" />
-                    <path
-                        d="M896 640C896 820 724 960 512 960C300 960 128 820 128 640C128 460 300 320 512 320C724 320 896 460 896 640Z"
-                        fill="#2c4a36" />
-                    <path
-                        d="M512 448C448 448 384 480 384 544C384 608 448 640 512 640C576 640 640 608 640 544C640 480 576 448 512 448Z"
-                        stroke="white" stroke-width="32" stroke-linecap="round" />
-                </svg>豆々庵</a>
-            <nav>
-                <ul>
-                    <li><a href="products.html" class="active"
-                            style="color:var(--text-color); font-weight:bold;">Products</a></li>
-                    <li><a href="world.html">World</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
+<body class="scene-tools">
+    <a class="skip-link" href="#main-content">本文へスキップ</a><header><div class="container header-inner"><a href="index.html" class="site-title"><img class="site-logo" src="assets/images/icons/site-logo.svg" alt="" width="30" height="30">まめたろー<span class="brand-note">/ 豆々庵</span></a><nav aria-label="メインナビゲーション"><ul><li><a href="products.html" aria-current="page">Tools</a></li><li><a href="world.html">Worlds</a></li><li><a href="about.html">About</a></li><li><a class="nav-shop" href="https://mametarovv.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH（新しいタブで開く）" title="BOOTH"><img src="assets/images/icons/logo_icon.svg" width="22" height="22" alt=""></a></li></ul></nav><button class="theme-toggle" type="button" aria-label="ダークモード" aria-pressed="false" title="ダークモードに切り替え" hidden><svg class="theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20.8 13.2A9 9 0 0 1 10.8 3.2a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div></header>
+
+    <main id="main-content" class="container catalogue page">
+        <div class="page-heading">
+            <p class="eyebrow">TOOLS</p>
+            <h1>ツール</h1>
+            <p>VRChatやUnityで使うツールと、Windowsアプリ、Chrome拡張の一覧です。</p>
         </div>
-    </header>
 
-    <main class="container" style="padding: 4rem 2rem;">
-        <h1 class="section-title">Products</h1>
-        <p class="text-center" style="margin-bottom: 3rem; color: var(--text-muted);">
-            VRChatでの活動やUnityでの制作を便利にするツールたちです。
-        </p>
+        <nav class="catalogue-nav" aria-label="制作物の分類"><a href="#tools">Tools</a><a href="world.html">Worlds</a><a href="#archive">Archive</a></nav>
+        <section id="tools" class="catalogue-section" aria-label="公開中のツール">
+            <div class="grid">
+                <article class="card" data-category="windows">
+                    <a class="card-link" href="product/tool-harmoflow.html">
+                        <div class="card-img">
+                            <img width="1024" height="1024" src="assets/images/HarmoFlow/HarmoFlow.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Windows</small>
+                            <h2 class="card-title">HarmoFlow <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">3DモデルとUV上でペイントし、レイヤーやマスクでテクスチャとマテリアルを編集するソフトです。</p>
+                        </div>
+                    </a>
+                </article>
 
-        <div class="grid">
-            <!-- HarmoFlow -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/HarmoFlow/HarmoFlow.jpg" alt="HarmoFlow">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">HarmoFlow</h2>
-                    <p class="card-text">3Dモデルに直接描ける、Windows向けテクスチャ・マテリアル制作ソフト。3D・UVペイントとNPR・PBR表示に対応。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-harmoflow.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/8754692" target="_blank" rel="noopener noreferrer" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-mamefont-baker.html">
+                        <div class="card-img">
+                            <img width="1024" height="1024" src="assets/images/MameFont Baker/MameFont Baker.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">MameFont Baker <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">使う文字を収集し、必要な文字だけを含むTextMeshProフォントアセットを作成・適用するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- MameFont Baker -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/MameFont Baker/MameFont Baker.jpg" alt="MameFont Baker">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">MameFont Baker</h2>
-                    <p class="card-text">使用する文字だけを集めてTextMeshProアセットを軽量化。文字収集からアトラス作成・適用までをまとめて実行。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-mamefont-baker.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/8528124" target="_blank" rel="noopener noreferrer" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-santext.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/SanText/SanText.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">SanText <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">アバターの改変手順を記録し、再適用や巻き戻しができるエディタ拡張です。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- SanText -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/SanText/SanText.webp" alt="SanText">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">SanText</h2>
-                    <p class="card-text">アバター改変手順を自動記録・再生。改変の「やり直し」と「使い回し」を劇的に楽にするUnity拡張。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-santext.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/8480596" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-pivocker.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/Pivocker/Pivocker.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">Pivocker <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">一時的なピボットを置き、メッシュを変更せずにオブジェクトの回転や拡縮を行うツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- Pivocker -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/Pivocker/Pivocker.webp" alt="Pivocker">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Pivocker</h2>
-                    <p class="card-text">Unityのピボットポイントを非破壊で一時変更。ボーン基準スナップ等でアクセサリー位置合わせを直感的に。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-pivocker.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/8437260" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="vrchat">
+                    <a class="card-link" href="product/tool-b-pen.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/B-Pen/B-Pen.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">VRChat · Udon</small>
+                            <h2 class="card-title">B-Pen <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">QvPenで描いた線の座標・色・太さを記録し、描画を再生する拡張スクリプトです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- B-Pen -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/B-Pen/B-Pen.webp" alt="B-Pen">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">B-Pen</h2>
-                    <p class="card-text">QvPenの描写を録画・自動再生。思い出やパフォーマンスを非破壊で記録。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-b-pen.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/8089765" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="windows">
+                    <a class="card-link" href="product/tool-vrc-memory.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/VRC-Memory/VRC-Memory.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Windows</small>
+                            <h2 class="card-title">VRC-Memory <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">VRChatのログと写真を関連付け、活動履歴をタイムラインや統計で振り返るアプリです。</p>
+                        </div>
+                    </a>
+                </article>
 
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-elevan.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/ElevaN/ElevaN.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">ElevaN <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">パターンやノイズを重ね合わせ、プレビューを確認しながら質感テクスチャを作るツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- BoothPic -->
-            <article class="card" style="position: relative;">
-                <div style="position: absolute; top: 10px; right: 10px; background: #666; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; z-index: 10;">サービス終了</div>
-                <div class="card-img">
-                    <img src="assets/images/BoothPic/BoothPic.webp" alt="BoothPic" style="filter: grayscale(100%);">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">BoothPic</h2>
-                    <p class="card-text">理想のコスチュームをAIが一瞬で特定。画像をアップロードしてBOOTHの衣装を検索。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-booth-pic.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap; width: 100%; text-align: center;">詳細とお知らせ</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="chrome">
+                    <a class="card-link" href="product/tool-booth-price-tracker.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/BOOTH Price Tracker for VRChat/Boopa.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Chrome</small>
+                            <h2 class="card-title">Boopa - BOOTH Price Tracker for VRChat <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">BOOTHのVRChat関連商品の価格履歴を、商品ページ上にグラフで表示する拡張機能です。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- VRC-Memory -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/VRC-Memory/VRC-Memory.webp" alt="VRC-Memory">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">VRC-Memory</h2>
-                    <p class="card-text">VRChatの思い出（ログ・写真）を可視化し、あなただけの「パスポート」を作成。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-vrc-memory.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7980379" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-emospark.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/EmoSpark/EmoSpark.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">EmoSpark <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">IK・FKや指の制御、ミラー編集を使い、Humanoidのポーズとアニメーションを作るツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- ElevaN -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/ElevaN/ElevaN.webp" alt="ElevaN">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">ElevaN</h2>
-                    <p class="card-text">複数のパターンやノイズを自由に組み合わせて、質感テクスチャを作成。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-elevan.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7966219" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="windows">
+                    <a class="card-link" href="product/tool-piptool.html">
+                        <div class="card-img">
+                            <img width="1024" height="1024" src="assets/images/PiPツール（Window）/PiPツール（Window）.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Windows</small>
+                            <h2 class="card-title">PiPツール（Window） <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">ウィンドウ全体や指定した領域を、最前面の小さなウィンドウに表示するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- BOOTH Price Tracker -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/BOOTH Price Tracker for VRChat/Boopa.webp"
-                        alt="BOOTH Price Tracker for VRChat">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Boopa - BOOTH Price Tracker for VRChat</h2>
-                    <p class="card-text">BOOTHのVRChat関連商品の価格推移をグラフ表示。買い時のチェックに。</p>
-                    <div class="card-footer" style="flex-wrap: nowrap; gap: 0.4rem;">
-                        <a href="product/tool-booth-price-tracker.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">詳しく見る</a>
-                        <a href="https://chromewebstore.google.com/detail/mllcdeonfeaepajkkidjmgonfkibeokb?utm_source=item-share-cb"
-                            target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 0.6rem; white-space: nowrap;">Chrome</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-sdftextgen.html">
+                        <div class="card-img">
+                            <img width="1032" height="1032" src="assets/images/SDF TextGen３D/SDF TextGen３D.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">SDF TextGen 3D <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">TrueType・OpenTypeフォントから、厚みを調整できる3D文字メッシュを生成するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- EmoSpark -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/EmoSpark/EmoSpark.webp" alt="EmoSpark">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">EmoSpark</h2>
-                    <p class="card-text">Humanoidアニメーション作成ツール。IKやプレビュー同期で直感的に。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-emospark.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7280602" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-blendshape-collector.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/BlendShapeCollector/BlendShapeCollector.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">BlendShapeCollector <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">メッシュのブレンドシェイプ設定値をリストに保存し、対象のメッシュへ適用するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- Prefab Size Editor -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/Prefab Size Editor/Prefab Size Editor.webp" alt="Prefab Size Editor">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Prefab Size Editor</h2>
-                    <p class="card-text">プレハブの表示サイズを自由に変更。プロジェクトの視認性を高め、整理整頓を強力に支援。 </p>
-                    <div class="card-footer">
-                        <a href="product/tool-prefab-size-editor.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7749992" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-physbonejp.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/Phys Bone.jp/Phys Bone.jp.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">Phys Bone.jp <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">公式スクリプトを変更せず、日本語のUIからPhys Boneの設定を編集するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- PiP Tool (Window) -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/PiPツール（Window）/PiPツール（Window）.webp" alt="PiP Tool">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">PiPツール（Window）</h2>
-                    <p class="card-text">あらゆるウィンドウを最前面PiP表示。「ながら見」作業に最適。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-piptool.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7745123" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-image-viewer.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/Image Viewer/Image Viewer.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">Image Viewer <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">Scene上に参考画像を表示し、有料版では動画や連番画像も再生できるツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- SDF TextGen 3D -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/SDF TextGen３D/SDF TextGen３D.webp" alt="SDF TextGen 3D">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">SDF TextGen 3D</h2>
-                    <p class="card-text">Unityだけで好きなフォントを3Dメッシュ化。Blender不要。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-sdftextgen.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7731565" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-vcc-template-builder.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/VCC Template Builder/VCC Template Builder.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">VCC Template Builder <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">ツールやアセットを含むVCC・ALCOM向けのプロジェクトテンプレートを作るツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- BlendShapeCollector -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/BlendShapeCollector/BlendShapeCollector.webp" alt="BlendShapeCollector">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">BlendShapeCollector</h2>
-                    <p class="card-text">ブレンドシェイプ特化型管理ツール。Unityだけで表情データを保管。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-blendshape-collector.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7580689" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-pose-menu-builder.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/PoseMenuBuilder/PoseMenuBuilder.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">PoseMenuBuilder <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">Modular Avatarと連携し、ポーズやモーションをExpression Menuへ一括登録するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- Phys Bone.jp -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/Phys Bone.jp/Phys Bone.jp.webp" alt="Phys Bone.jp">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Phys Bone.jp</h2>
-                    <p class="card-text">Phys Boneを日本語UIで直感的に設定。非破壊設計。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-physbonejp.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7420500" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-scene-assets-compression.html">
+                        <div class="card-img">
+                            <img width="2000" height="2000" src="assets/images/Scene Assets Compression/Scene Assets Compression.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">Scene Assets Compression <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">Scene上で対象を確認しながら、テクスチャサイズをまとめて調整・圧縮するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- Image Viewer -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/Image Viewer/Image Viewer.webp" alt="Image Viewer">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Image Viewer</h2>
-                    <p class="card-text">UnityのScene上に参考画像や動画を常時表示。制作活動をスムーズに。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-image-viewer.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7400733" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-item-toggle-builder.html">
+                        <div class="card-img">
+                            <img width="2000" height="2000" src="assets/images/ItemToggleBuilder/ItemToggleBuilder.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">ItemToggleBuilder <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">アバターのメッシュを選び、Modular AvatarでON・OFF切り替えメニューを生成するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- VCC Template Builder -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/VCC Template Builder/VCC Template Builder.webp" alt="VCC Template Builder">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">VCC Template Builder</h2>
-                    <p class="card-text">初期搭載したいツールやアセットをテンプレート化。プロジェクト作成を加速。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-vcc-template-builder.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7380522" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="windows">
+                    <a class="card-link" href="product/tool-vrc-youfix.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/VRC YouFix/VRC YouFix.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Windows</small>
+                            <h2 class="card-title">VRC YouFix <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">YouTubeやニコニコ動画のURLを、VRChatで再生するための形式へ変換するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- PoseMenuBuilder -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/PoseMenuBuilder/PoseMenuBuilder.webp" alt="PoseMenuBuilder">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">PoseMenuBuilder</h2>
-                    <p class="card-text">ポーズのメニューを無限に自動生成。Expression Menuへの登録を効率化。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-pose-menu-builder.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7371501" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-avatar-binder.html">
+                        <div class="card-img">
+                            <img width="2000" height="2000" src="assets/images/AvatarBinder/AvatarBinder.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">AvatarBinder <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">改変したアバターをプレハブごとにUnityPackageとして保存し、一覧で管理するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- Scene Assets Compression -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/Scene Assets Compression/Scene Assets Compression.webp"
-                        alt="Scene Assets Compression">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">Scene Assets Compression</h2>
-                    <p class="card-text">アセットを視覚的に一括圧縮。Unity上での軽量化作業を効率化。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-scene-assets-compression.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7354306" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-booth-package-manager.html">
+                        <div class="card-img">
+                            <img width="2000" height="2000" src="assets/images/BOOTH Package Manager/BOOTH Package Manager.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">BOOTH Package Manager <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">UnityPackageを一覧で管理し、複数のプロジェクトからインポートできるツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- ItemToggleBuilder -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/ItemToggleBuilder/ItemToggleBuilder.webp" alt="ItemToggleBuilder">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">ItemToggleBuilder</h2>
-                    <p class="card-text">アイテムON/OFFメニューを全自動生成。アバター改変の手間を劇的に削減。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-item-toggle-builder.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7349130" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-booth-folder-icons.html">
+                        <div class="card-img">
+                            <img width="2160" height="2160" src="assets/images/BoothFolderIcons/BoothFolderIcons.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">BoothFolderIcons <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">プロジェクトのフォルダに画像アイコンを設定し、アセットを検索するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- VRC YouFix -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/VRC YouFix/VRC YouFix.webp" alt="VRC YouFix">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">VRC YouFix</h2>
-                    <p class="card-text">動画のURLを再生できるように変換。ニコニコ動画やYouTubeに対応。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-vrc-youfix.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7340045" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-face-menu-builder.html">
+                        <div class="card-img">
+                            <img width="600" height="600" src="assets/images/フェイスメニュービルダー/フェイスメニュービルダー.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">フェイスメニュービルダー <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">アバターの表情から、Expression Menuと各表情のアイコンを自動生成するツールです。</p>
+                        </div>
+                    </a>
+                </article>
 
-            <!-- AvatarBinder -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/AvatarBinder/AvatarBinder.webp" alt="AvatarBinder">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">AvatarBinder</h2>
-                    <p class="card-text">改変アバターをパッケージ保存。複数の改変状態を賢く管理・バックアップ。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-avatar-binder.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7336016" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
+                <article class="card" data-category="unity">
+                    <a class="card-link" href="product/tool-icon-studio.html">
+                        <div class="card-img">
+                            <img width="600" height="600" src="assets/images/アイコンスタジオ/アイコンスタジオ.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Unity</small>
+                            <h2 class="card-title">アイコンスタジオ <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">Expression Menu用アイコンや紹介画像を撮影し、FFmpeg連携で動画も出力するツールです。</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
 
-            <!-- BOOTH Package Manager -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/BOOTH Package Manager/BOOTH Package Manager.webp"
-                        alt="BOOTH Package Manager">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">BOOTH Package Manager</h2>
-                    <p class="card-text">UnityだけでUnityPackageを管理。プロジェクトを横断したスムーズな開発を支援。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-booth-package-manager.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7321369" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- BoothFolderIcons -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/BoothFolderIcons/BoothFolderIcons.webp" alt="BoothFolderIcons">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">BoothFolderIcons</h2>
-                    <p class="card-text">Unityプロジェクトのフォルダをアイコンで整理。独自のアセット検索機能で時短を。 </p>
-                    <div class="card-footer">
-                        <a href="product/tool-booth-folder-icons.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7302101" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- フェイスメニュービルダー -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/フェイスメニュービルダー/フェイスメニュービルダー.webp" alt="フェイスメニュービルダー">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">フェイスメニュービルダー</h2>
-                    <p class="card-text">表情メニューとアイコンを無限に自動生成。MA連携でスムーズなセットアップを。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-face-menu-builder.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7290714" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- アイコンスタジオ -->
-            <article class="card">
-                <div class="card-img">
-                    <img src="assets/images/アイコンスタジオ/アイコンスタジオ.webp" alt="アイコンスタジオ">
-                </div>
-                <div class="card-body">
-                    <h2 class="card-title">アイコンスタジオ</h2>
-                    <p class="card-text">EXメニュー用アイコンから紹介動画まで一括作成。高画質レンダリング対応。</p>
-                    <div class="card-footer">
-                        <a href="product/tool-icon-studio.html" class="btn"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem;">詳しく見る</a>
-                        <a href="https://mametarovv.booth.pm/items/7280602" target="_blank" class="btn btn-outline"
-                            style="font-size: 0.9rem; padding: 0.5rem 1rem; white-space: nowrap;">BOOTH</a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
+        <section class="catalogue-section archive-section" id="archive" aria-labelledby="archive-heading">
+            <div class="archive-heading"><p class="eyebrow">ARCHIVE</p><h2 id="archive-heading">サービスを終了したもの</h2></div>
+            <div class="grid">
+                <article class="card" data-category="web">
+                    <a class="card-link" href="product/tool-booth-pic.html">
+                        <div class="card-img">
+                            <img width="2048" height="2048" src="assets/images/BoothPic/BoothPic.webp" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-kicker">Web · サービス終了</small>
+                            <h2 class="card-title">BoothPic <span aria-hidden="true">→</span></h2>
+                            <p class="card-text">画像からBOOTHの衣装を検索するサービスで、2026年5月に提供を終了しました。</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 豆々庵 All Rights Reserved.</p>
-            <div class="footer-icons">
-                <a href="https://mametarovv.booth.pm/" target="_blank" class="icon-link" title="BOOTH">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 812C0 929.084 94.9156 1024 212 1024H812C929.084 1024 1024 929.084 1024 812V212C1024 94.9156 929.084 0 812 0H212C94.9156 0 0 94.9156 0 212V812Z"
-                            fill="#FC4D50" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M773.828 438.341V389.068L650.744 192H608.227L541.093 353.238L475.077 214.446L438.138 214.382L326.272 478.653V227.833H250.172V250.007H192V327.26H250.172V550.306C250.172 570.098 266.227 586.141 286.004 586.141H324.033V832L401.683 831.946C401.683 831.946 401.695 720.762 401.695 720.644C401.695 658.964 455.026 608.963 520.963 608.563C521.198 608.563 521.445 608.535 521.707 608.535H521.744H521.786H521.875C629.722 608.612 717.139 690.28 717.139 790.983V832H773.828V611.427H832V489.487L773.828 438.341Z"
-                            fill="white" />
-                    </svg>
-                </a>
-                <a href="https://x.com/mametaro_vv" target="_blank" class="icon-link" title="X (Twitter)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
+    <footer><div class="container footer-inner"><p class="footer-brand">まめたろー / 豆々庵<small>© 2026 Mametaro All Rights Reserved.</small></p><div class="footer-links"><a href="https://x.com/mametaro_vv" target="_blank" rel="noopener noreferrer" aria-label="X（新しいタブで開く）" title="X"><svg width="21" height="21" fill="currentColor" aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a><a href="https://github.com/MametaroGG" target="_blank" rel="noopener noreferrer" aria-label="GitHub（新しいタブで開く）" title="GitHub"><svg width="21" height="21" fill="currentColor" aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://mametarovv.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH（新しいタブで開く）" title="BOOTH"><img src="assets/images/icons/logo_icon.svg" width="22" height="22" alt=""></a></div></div></footer>
 </body>
 
 </html>

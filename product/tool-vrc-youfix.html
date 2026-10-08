@@ -11,7 +11,10 @@
 
       gtag('config', 'G-79JWHBC961');
     </script>
+
     <meta charset="UTF-8">
+    <script src="../assets/js/main.js"></script>
+    <meta name="color-scheme" content="light dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>動画のURLを再生できるように変換するツール「VRC YouFix」【ニコニコ動画対応】 | 豆々庵</title>
     <meta name="description" content="YouTubeやニコニコ動画のURLをVRChatで再生可能な形式に変換する無料ツール「VRC YouFix」。高画質を選べる「ローカル配信」とアプリ不要の「直リンク」モードに対応。">
@@ -29,61 +32,47 @@
     <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
-    <header>
-        <div class="container header-inner">
-            <a href="../index.html" class="site-title"><svg class="site-logo" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M512 384C512 384 450 128 320 64C320 64 384 128 384 256C384 384 512 384 512 384Z" fill="#8cba9c"/><path d="M512 384C512 384 574 128 704 64C704 64 640 128 640 256C640 384 512 384 512 384Z" fill="#4a7459"/><path d="M896 640C896 820 724 960 512 960C300 960 128 820 128 640C128 460 300 320 512 320C724 320 896 460 896 640Z" fill="#2c4a36"/><path d="M512 448C448 448 384 480 384 544C384 608 448 640 512 640C576 640 640 608 640 544C640 480 576 448 512 448Z" stroke="white" stroke-width="32" stroke-linecap="round"/></svg>豆々庵</a>
-            <nav>
-                <ul>
-                    <li><a href="../products.html">Products</a></li>
-                    <li><a href="../world.html">World</a></li>
-                    <li><a href="../about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="scene-tools">
+    <a class="skip-link" href="#main-content">本文へスキップ</a><header><div class="container header-inner"><a href="../index.html" class="site-title"><img class="site-logo" src="../assets/images/icons/site-logo.svg" alt="" width="30" height="30">まめたろー<span class="brand-note">/ 豆々庵</span></a><nav aria-label="メインナビゲーション"><ul><li><a href="../products.html" aria-current="page">Tools</a></li><li><a href="../world.html">Worlds</a></li><li><a href="../about.html">About</a></li><li><a class="nav-shop" href="https://mametarovv.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH（新しいタブで開く）" title="BOOTH"><img src="../assets/images/icons/logo_icon.svg" width="22" height="22" alt=""></a></li></ul></nav><button class="theme-toggle" type="button" aria-label="ダークモード" aria-pressed="false" title="ダークモードに切り替え" hidden><svg class="theme-icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20.8 13.2A9 9 0 0 1 10.8 3.2a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div></header>
 
-    <main class="container" style="padding: 4rem 2rem;">
-        <div style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-muted);">
-            <a href="../index.html">Home</a> &gt; <a href="../products.html">Products</a> &gt; <span>VRC YouFix</span>
+    <main id="main-content" class="container product-detail">
+        <div class="breadcrumbs">
+            <a href="../index.html">Home</a> &gt; <a href="../products.html">Tools</a> &gt; <span>VRC YouFix</span>
         </div>
 
         <article>
             <div class="product-hero">
                 <div class="product-hero-info">
                     <h1>VRC YouFix</h1>
-                    <p>
-                        YouTubeやニコニコ動画のURLを、VRChatで再生できるように変換。<br>
-                        高画質配信と直リンク再生の2つのモードに対応した、動画URL変換ツールです。
-                    </p>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://mametarovv.booth.pm/items/7340045" target="_blank" class="btn" style="padding: 1rem 2rem; font-size: 1.1rem; ">BOOTHでダウンロード（無料）</a>
+                    <p>YouTubeやニコニコ動画のURLを、VRChatで再生するための形式へ変換するツールです。</p>
+                    <div class="hero-actions">
+                        <a href="https://mametarovv.booth.pm/items/7340045" target="_blank" rel="noopener noreferrer" class="btn">BOOTHでダウンロード（無料）</a>
                     </div>
                 </div>
                 <div class="product-hero-image">
-                    <img src="../assets/images/VRC YouFix/VRC YouFix.webp" alt="VRC YouFix"
-                        style="width: 100%; border-radius: 8px;">
+                    <img width="2048" height="2048" src="../assets/images/VRC YouFix/VRC YouFix.webp" alt="VRC YouFix"
+                       >
                 </div>
             </div>
 
-            <div class="content-grid" style="display: grid; gap: 4rem; grid-template-columns: 1fr;">
+            <div class="content-grid manual-sections">
 
                 <section>
                     <h2>概要</h2>
                     <p>
                         「VRC YouFix」は、動画配信サイトのURLをVRChat等のワールド内で再生可能な形式へ変換するデスクトップツールです。<br>
-                        本アプリでは、動画そのものを作者側のサーバーへ送信したり、作者が内容を取得したりすることは一切ありません。安全かつクリーンに動作します。
+                        本アプリでは、動画そのものを作者側のサーバーへ送信したり、作者が内容を取得したりすることは一切ありません。
                     </p>
                     <div style="margin-top: 1rem; padding: 1rem 1.5rem; background: var(--bg-color); border-left: 4px solid var(--primary-color); border-radius: 4px;">
-                        <strong>【v1.4.0以降の変更について】</strong><br>
-                        従来のDropboxへのアップロード方式（第三者への共有リスク排除および私的利用の範囲への適正化のため）を廃止し、新たに「ローカル配信」および「直リンク」の安全な2方式へ完全移行いたしました。
+                        <strong>【配信方式の変更について】</strong><br>
+                        v1.4.0でDropboxへのアップロード方式を廃止し、v1.4.2で直リンクモードを追加しました。現在はローカル配信と直リンクの2方式を利用できます。
                     </div>
                 </section>
 
                 <section>
                     <h2>動作のしくみ（選べる2つの出力モード）</h2>
-                    <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 1.5rem;">
-                        <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; background: var(--card-bg);">
+                    <div style="display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); margin-top: 1.5rem;">
+                        <div class="mode-card">
                             <h3 style="font-size: 1.2rem; color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; margin-bottom: 1rem;">
                                 ① ローカル配信モード
                             </h3>
@@ -100,7 +89,7 @@
                             </p>
                         </div>
 
-                        <div style="border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; background: var(--card-bg);">
+                        <div class="mode-card">
                             <h3 style="font-size: 1.2rem; color: var(--primary-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 0.5rem; margin-bottom: 1rem;">
                                 ② 直リンクモード
                             </h3>
@@ -113,7 +102,7 @@
                                 <li><strong>配信・再生:</strong> VRChatが配信元サーバーへ直接接続して再生。動画データはお使いのPCを経由・複製せず、URLには数時間の有効期限があります。</li>
                             </ol>
                             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.8rem;">
-                                ※音質はローカル配信と同じ（AAC 約128kbps）です。
+                                ※音質はローカル配信と同じ（AAC 約128kbps）です。<br>※有効な直リンクを知っている人は再生できます。不特定多数への配布は避けてください。
                             </p>
                         </div>
                     </div>
@@ -121,7 +110,7 @@
 
                 <section>
                     <h2>ニコニコ動画対応について</h2>
-                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                    <ul class="manual-list">
                         <li><strong>「ローカル配信」モード</strong>にてニコニコ動画の再生に対応しています（最高画質720p）。</li>
                         <li>会員限定・年齢制限・地域制限がある動画は変換できません。</li>
                         <li>コメントの表示機能はありません。</li>
@@ -130,7 +119,7 @@
 
                 <section>
                     <h2>ソフトの使い方 & 必須ソフトについて</h2>
-                    <ul style="list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                    <ul class="manual-list">
                         <li><strong>使い方:</strong> ダウンロードした <code>VRCYouFix_x.x.x_Setup.exe</code> を開き、PCにインストールしてご利用ください。</li>
                         <li><strong>必須ソフト「ffmpeg」:</strong> ソフト導入時に自動インストールされるようになりました！別途手動でインストールする必要はありません。</li>
                     </ul>
@@ -139,19 +128,19 @@
                 <section>
                     <h2>ギャラリー</h2>
                     <div
-                        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">
-                        <img src="../assets/images/VRC YouFix/VRC YouFix_1.webp" alt="Screenshot 1"
-                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
-                        <img src="../assets/images/VRC YouFix/VRC YouFix_2.webp" alt="Screenshot 2"
-                            style="width: 100%; border-radius: 8px; border: 1px solid var(--border-color);">
+                        class="gallery-grid">
+                        <img width="702" height="551" src="../assets/images/VRC YouFix/VRC YouFix_1.webp" alt="Screenshot 1"
+                           >
+                        <img width="705" height="553" src="../assets/images/VRC YouFix/VRC YouFix_2.webp" alt="Screenshot 2"
+                           >
                     </div>
                 </section>
 
                 <section
-                    style="background: var(--bg-color); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color);">
-                    <h2 style="font-size: 1.5rem;">動作環境</h2>
-                    <ul style="list-style: none; padding: 0; line-height: 2; font-size: 1rem;">
-                        <li>✔ Windows 10 / 11</li>
+                    class="content-panel">
+                    <h2>動作環境</h2>
+                    <ul class="plain-list">
+                        <li>✔ Windows 11 Pro / Home（BOOTH記載の動作確認環境）</li>
                         <li>✔ VRChatの設定で「Allow Untrusted URLs」がONであること</li>
                     </ul>
                 </section>
@@ -161,24 +150,7 @@
 
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 豆々庵 All Rights Reserved.</p>
-            <div class="footer-icons">
-                <a href="https://mametarovv.booth.pm/" target="_blank" class="icon-link" title="BOOTH">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 812C0 929.084 94.9156 1024 212 1024H812C929.084 1024 1024 929.084 1024 812V212C1024 94.9156 929.084 0 812 0H212C94.9156 0 0 94.9156 0 212V812Z" fill="#FC4D50"/><path fill-rule="evenodd" clip-rule="evenodd" d="M773.828 438.341V389.068L650.744 192H608.227L541.093 353.238L475.077 214.446L438.138 214.382L326.272 478.653V227.833H250.172V250.007H192V327.26H250.172V550.306C250.172 570.098 266.227 586.141 286.004 586.141H324.033V832L401.683 831.946C401.683 831.946 401.695 720.762 401.695 720.644C401.695 658.964 455.026 608.963 520.963 608.563C521.198 608.563 521.445 608.535 521.707 608.535H521.744H521.786H521.875C629.722 608.612 717.139 690.28 717.139 790.983V832H773.828V611.427H832V489.487L773.828 438.341Z" fill="white"/></svg>
-                </a>
-                <a href="https://x.com/mametaro_vv" target="_blank" class="icon-link" title="X (Twitter)">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.486 3.24H4.298l13.31 17.41z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="../assets/js/main.js"></script>
+    <footer><div class="container footer-inner"><p class="footer-brand">まめたろー / 豆々庵<small>© 2026 Mametaro All Rights Reserved.</small></p><div class="footer-links"><a href="https://x.com/mametaro_vv" target="_blank" rel="noopener noreferrer" aria-label="X（新しいタブで開く）" title="X"><svg width="21" height="21" fill="currentColor" aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a><a href="https://github.com/MametaroGG" target="_blank" rel="noopener noreferrer" aria-label="GitHub（新しいタブで開く）" title="GitHub"><svg width="21" height="21" fill="currentColor" aria-hidden="true" focusable="false" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a href="https://mametarovv.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH（新しいタブで開く）" title="BOOTH"><img src="../assets/images/icons/logo_icon.svg" width="22" height="22" alt=""></a></div></div></footer>
 </body>
 
 </html>

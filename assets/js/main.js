@@ -1,76 +1,109 @@
-/**
- * Bean Shop Site - Shared Logic
- */
+/* Runs synchronously in the head, before styles paint, on every route. */
+(function () {
+    'use strict';
+    var root = document.documentElement;
+    var key = 'mametaro-theme';
+    var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    var choice = null;
+    var button;
+    var transition;
+    var motionTimer;
+    var reducedMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Bean Shop Site Loaded');
-
-    // If we are on the home page, load random pickups
-    const pickupContainer = document.getElementById('pickup-container');
-    if (pickupContainer) {
-        initRandomPickups(pickupContainer);
-    }
-});
-
-/**
- * Fetches products.html, parses it, and displays random items
- */
-async function initRandomPickups(container) {
-    // Check if site is opened via file:// protocol
-    if (window.location.protocol === 'file:') {
-        console.error('Fetch is blocked on the file:// protocol. Please use a local server to view dynamic content.');
-        container.innerHTML = `
-            <p class="text-center" style="grid-column: 1 / -1; color: var(--text-muted); font-size: 0.9rem;">
-                ローカルファイルとして閲覧中。動的コンテンツ（商品のランダム表示）を確認するには、VSCode の 「Live Server」 拡張機能などをご利用ください。
-            </p>`;
-        return;
-    }
-
-    try {
-        const response = await fetch('products.html');
-        if (!response.ok) throw new Error('Failed to load products');
-
-        const html = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-
-        // Find all cards from products.html
-        const allCards = Array.from(doc.querySelectorAll('.card'));
-
-        if (allCards.length === 0) {
-            container.innerHTML = '<p class="text-center" style="grid-column: 1 / -1;">No products found.</p>';
+    function changeWithMotion() {
+        if (transition) transition.skipTransition();
+        window.clearTimeout(motionTimer);
+        if (reducedMotion && reducedMotion.matches) {
+            root.classList.remove('theme-changing');
+            applyTheme();
             return;
         }
-
-        // Shuffle and pick 3
-        const shuffled = allCards.sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, 3);
-
-        // Pre-process cards: fix image paths (if needed) and links
-        // Since both index.html and products.html are in the root, paths should mostly work,
-        // but product detail links go from product/ to product/.
-        // Wait, index.html is in root. products.html is in root.
-        // Detail links in products.html are like "product/tool-xxx.html".
-        // This should work fine from index.html too.
-
-        container.innerHTML = ''; // Clear loading message
-
-        selected.forEach(card => {
-            // Clone the card to index.html
-            const clonedCard = card.cloneNode(true);
-
-            // Note: The structure in index.html might slightly differ in desired style,
-            // but for now we use the exact same card style for consistency.
-
-            // Adjust the detail link in the card footer if it's different
-            // Actually, in products.html they use "product/tool-xxx.html".
-            // That works in index.html too.
-
-            container.appendChild(clonedCard);
-        });
-
-    } catch (error) {
-        console.error('Error loading pickups:', error);
-        container.innerHTML = '<p class="text-center" style="grid-column: 1 / -1; color: var(--text-muted);">Failed to load pickups.</p>';
+        root.classList.add('theme-changing');
+        function finish() {
+            motionTimer = window.setTimeout(function () { root.classList.remove('theme-changing'); }, 500);
+        }
+        if (!document.startViewTransition || !root.animate) {
+            applyTheme();
+            finish();
+            return;
+        }
+        var box = button.getBoundingClientRect();
+        var x = box.left + box.width / 2;
+        var y = box.top + box.height / 2;
+        var radius = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y));
+        try {
+            // Read the latest choice in the callback, even when clicks interrupt capture.
+            var current = document.startViewTransition(applyTheme);
+            transition = current;
+            current.ready.then(function () {
+                if (transition !== current) return;
+                root.animate({ clipPath: ['circle(0px at ' + x + 'px ' + y + 'px)', 'circle(' + radius + 'px at ' + x + 'px ' + y + 'px)'] }, {
+                    duration:480, easing:'cubic-bezier(.22,1,.36,1)', pseudoElement:'::view-transition-new(root)'
+                });
+            }).catch(function () { /* Capture may be skipped on a rapid click or hidden tab. */ });
+            current.finished.catch(function () {}).then(function () {
+                if (transition !== current) return;
+                transition = null;
+                finish();
+            });
+        } catch (error) {
+            transition = null;
+            applyTheme();
+            finish();
+        }
     }
-}
+
+    function applyInstantly() {
+        if (transition) transition.skipTransition();
+        transition = null;
+        window.clearTimeout(motionTimer);
+        root.classList.remove('theme-changing');
+        applyTheme();
+    }
+
+    function readChoice(fallback) {
+        try {
+            var value = window.localStorage.getItem(key);
+            return value === 'dark' || value === 'light' ? value : null;
+        } catch (error) {
+            return fallback || null;
+        }
+    }
+
+    function applyTheme() {
+        var dark = choice ? choice === 'dark' : !!(media && media.matches);
+        root.setAttribute('data-theme', dark ? 'dark' : 'light');
+        if (button) {
+            button.setAttribute('aria-pressed', String(dark));
+            button.title = dark ? 'ライトモードに切り替え' : 'ダークモードに切り替え';
+        }
+    }
+
+    choice = readChoice();
+    applyTheme();
+    if (media) {
+        if (media.addEventListener) media.addEventListener('change', applyInstantly);
+        else if (media.addListener) media.addListener(applyInstantly);
+    }
+    window.addEventListener('storage', function (event) {
+        if (event.key === key || event.key === null) {
+            choice = readChoice();
+            applyInstantly();
+        }
+    });
+    window.addEventListener('pageshow', function () {
+        choice = readChoice(choice);
+        applyInstantly();
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        button = document.querySelector('.theme-toggle');
+        if (!button) return;
+        applyTheme();
+        button.hidden = false;
+        button.addEventListener('click', function () {
+            choice = (choice || root.getAttribute('data-theme')) === 'dark' ? 'light' : 'dark';
+            try { window.localStorage.setItem(key, choice); } catch (error) { /* Session still works. */ }
+            changeWithMotion();
+        });
+    });
+}());
